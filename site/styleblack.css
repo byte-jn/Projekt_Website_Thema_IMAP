@@ -2,6 +2,9 @@ body {
     background-color: #0f0f0f;
     color: #f0f0f0e8;
     font-family: monospace;
+    padding: 1%;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 header {
@@ -44,13 +47,12 @@ header {
 div {
     margin: 10px;
     padding: 10px;
-    background-color: #43434310;
-    float: left;
+    background-color: rgba(64, 64, 64, 0.188);
     transition: 0.5s ease;
-    width: 160px;
-    height: 160px;
+    min-width: 160px;
+    min-height: 160px;
+    flex: 1 1 160px; /* flex-grow: 1, flex-shrink: 1, Basisbreite: 160px */
     border-radius: 10px;
-    overflow: auto;
 }
 
 div p {
@@ -58,8 +60,7 @@ div p {
 }
 
 .bbox {
-    width: 360px;
-    height: 360px;
+    flex: 1 1 360px; /* flex-grow: 1, flex-shrink: 1, Basisbreite: 360px */
     padding: 10px;
 }
 
@@ -67,11 +68,11 @@ div p {
     margin: 0px;
 }
 
-.gbox {
+.tbox {
     float: none;
     width: auto;
     height: auto;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 20px;
     border-radius: 20px;
     padding: 20px;
@@ -89,3 +90,19 @@ a {
     color: #f0f0f0;
 }
 
+.inhalt {
+    margin: 0px;
+    padding: 0px;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 0px;
+    transition: 0s ease;
+    display: flex;
+    flex-wrap: wrap; /* Falls die Boxen nicht in eine Zeile passen */
+    gap: 10px; /* Abstand zwischen den Items */
+    width: auto;
+    height: auto;
+}
+
+.inhalt:hover {
+    background-color: rgba(255, 255, 255, 0);
+}
