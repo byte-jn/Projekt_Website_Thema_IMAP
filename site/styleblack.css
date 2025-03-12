@@ -19,11 +19,11 @@ header {
     transition: 0.5s ease;
 }
 
-header h1 {
+#title {
     font-size: xx-large;
 }
 
-header p {
+#minititle {
     font-size: large;
 }
 
@@ -40,6 +40,10 @@ div {
     height: 200px;
     border-radius: 10px;
     overflow: auto;
+}
+
+div p {
+    font-size: large;
 }
 
 #bbox {
@@ -65,4 +69,14 @@ header:hover {
 
 a {
     color: #f0f0f0;
+}
+
+#titlebutton {
+    color: #f0f0f0;
+    background: none;
+    border-radius: 50px;
+    height: 25px;
+    right: 10px;
+    text-align: center;
+    border-color: #f0f0f0;
 }
