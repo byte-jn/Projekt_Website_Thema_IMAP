@@ -20,11 +20,25 @@ header {
 }
 
 #title {
-    font-size: xx-large;
+    font-size: 50px;
+    margin: 0px;
+    margin-top: -10px;
+    margin-bottom: -10px;
 }
 
 #minititle {
     font-size: large;
+}
+
+#titlebutton {
+    color: #0f0f0f;
+    background: none;
+    border-radius: 50px;
+    height: 25px;
+    right: 10px;
+    margin-bottom: 0px;
+    text-align: center;
+    border-color: #0f0f0f;
 }
 
 div {
@@ -42,6 +56,10 @@ div {
     overflow: auto;
 }
 
+div p {
+    font-size: large;
+}
+
 #bbox {
     width: 460px;
     height: 430px;
@@ -51,8 +69,10 @@ div {
     float: none;
     width: auto;
     height: auto;
+    margin-top: 20px;
     margin-bottom: 50px;
     border-radius: 20px;
+    padding: 20px;
 }
 
 div:hover {
@@ -67,13 +87,3 @@ a {
     color: #0f0f0f;
 }
 
-
-#titlebutton {
-    color: #0f0f0f;
-    background: none;
-    border-radius: 50px;
-    height: 25px;
-    right: 10px;
-    text-align: center;
-    border-color: #0f0f0f;
-}
