@@ -19,11 +19,11 @@ header {
     transition: 0.5s ease;
 }
 
-header h1 {
+#title {
     font-size: xx-large;
 }
 
-header p {
+#minititle {
     font-size: large;
 }
 
@@ -65,4 +65,15 @@ header:hover {
 
 a {
     color: #0f0f0f;
+}
+
+
+#titlebutton {
+    color: #0f0f0f;
+    background: none;
+    border-radius: 50px;
+    height: 25px;
+    right: 10px;
+    text-align: center;
+    border-color: #0f0f0f;
 }
