@@ -1,5 +1,5 @@
 body {
-    background-color: #f0f0f0e8;
+    background-color: #f0f0f0;
     color: #0f0f0f;
     font-family: monospace;
 }
@@ -56,9 +56,9 @@ div {
 }
 
 div:hover {
-    background-color: #c3f7fac4;
+    background-color: #ffcc00;
 }
 
 header:hover {
-    background-color: #c3f7fac4;
+    background-color: #ffcc00;
 }
