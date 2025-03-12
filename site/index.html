@@ -8,32 +8,32 @@
     <script src="script.js"></script>
 </head>
 <body>
-    <div id="gbox">
+    <div class="gbox">
         <h1 id="title">IMAP</h1>
         <p id="minititle">Internet Message Access Protocol</p>
         <button id="titlebutton" onclick="switchdarklightmode()">switch light/dark mode</button>
     </div>
-    <div id="bbox">
+    <div class="bbox" onclick="getbigger('b',0)">
         <h1>Grundprinzip:</h1>
         <p>IMAP ist ein Protokoll zum Abrufen und Verwalten von E-Mails direkt auf dem Server. Es ermöglicht Clients den gleichzeitigen Zugriff auf dieselbe Mailbox, ohne dass die Nachrichten lokal dauerhaft gespeichert werden müssen.</p>
         <a href="https://de.wikipedia.org/wiki/Internet_Message_Access_Protocol#Protokolleigenschaften" target="_blank"><i>Wikipedia Link</i></a>
     </div>
-    <div id="bbox">
+    <div class="bbox" onclick="getbigger('b',1)">
         <h1>Synchronisation und Statusverwaltung:</h1>
         <p>Da E-Mails auf dem Server verbleiben, bleiben Statusinformationen wie "gelesen", "ungelesen" oder "markiert" stets synchron – unabhängig davon, von welchem Gerät aus auf das Postfach zugegriffen wird.</p>
         <a href="https://de.wikipedia.org/wiki/Internet_Message_Access_Protocol#Clients" target="_blank"><i>Wikipedia Link</i></a>
     </div>
-    <div id="bbox">
+    <div class="bbox" onclick="getbigger('b',2)">
         <h1>Erweiterte Funktionen:</h1>
         <p>IMAP unterstützt nicht nur den simplen Abruf von Nachrichten, sondern auch das Verwalten von Ordnerstrukturen, das Durchführen von Suchvorgängen und das selektive Herunterladen von Inhalten (z. B. nur Kopfzeilen).</p>
         <a href="https://de.wikipedia.org/wiki/Internet_Message_Access_Protocol#Clients" target="_blank"><i>Wikipedia Link</i></a>
     </div>
-    <div id="bbox">
+    <div class="bbox" onclick="getbigger('b',3)">
         <h1>Technische Details:</h1>
         <p>Das Protokoll arbeitet standardmäßig über den TCP-Port 143. Für gesicherte Verbindungen wird üblicherweise der Port 993 in Kombination mit SSL/TLS verwendet.</p>
         <a href="https://de.wikipedia.org/wiki/Internet_Message_Access_Protocol#Verschl%C3%BCsselung" target="_blank">Wikipedia Link</a>
     </div>
-    <div id="bbox">
+    <div class="bbox" onclick="getbigger('b',4)">
         <h1>Vorteile gegenüber POP3:</h1>
         <p>Anders als POP3, das meist die E-Mails vom Server herunterlädt und entfernt, lässt IMAP die Nachrichten auf dem Server liegen und ermöglicht so eine flexiblere und geräteübergreifende Verwaltung der E-Mails.</p>
         <a href="https://de.wikipedia.org/wiki/Internet_Message_Access_Protocol#Unterschiede_zum_Post_Office_Protocol" target="_blank">Wikipedia Link</a>

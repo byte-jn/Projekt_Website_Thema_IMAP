@@ -43,15 +43,12 @@ header {
 
 div {
     margin: 10px;
-    padding-left: 20px;
-    padding-bottom: 5px;
-    padding-right: 20px;
-    padding-top: 5px;
+    padding: 10px;
     background-color: #43434310;
     float: left;
     transition: 0.5s ease;
-    width: 200px;
-    height: 200px;
+    width: 160px;
+    height: 160px;
     border-radius: 10px;
     overflow: auto;
 }
@@ -60,12 +57,17 @@ div p {
     font-size: large;
 }
 
-#bbox {
-    width: 460px;
-    height: 430px;
+.bbox {
+    width: 360px;
+    height: 360px;
+    padding: 10px;
 }
 
-#gbox {
+.bbox h1{
+    margin: 0px;
+}
+
+.gbox {
     float: none;
     width: auto;
     height: auto;
