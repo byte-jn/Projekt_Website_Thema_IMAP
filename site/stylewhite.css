@@ -7,19 +7,13 @@ body {
     padding-bottom: 10px;
 }
 
-header {
-    background-color: #43434300;
-    padding: 0px;
-    position: fixed;
-    top: 0px;
-    right: 0px;
-    left: 0px;
-    padding-left: 20px;
-    padding-bottom: 10px;
-    padding-right: 20px;
+button {
+    background-color: #0f0f0f00;
+    color: #0f0f0f;
+    border-color: #0f0f0f00;
+    text-decoration: underline;
     text-align: left;
-    height: 100px;
-    transition: 0.5s ease;
+    padding: 0px;
 }
 
 #title {
@@ -34,14 +28,13 @@ header {
 }
 
 #titlebutton {
-    color: #0f0f0f;
-    background: none;
-    border-radius: 50px;
-    height: 25px;
-    right: 10px;
-    margin-bottom: 0px;
-    text-align: center;
     border-color: #0f0f0f;
+    border-radius: 50px;
+    height: 30px;
+    width: 160px;
+    text-align: center;
+    text-decoration: none;
+    padding: 4px;
 }
 
 div {
@@ -59,7 +52,7 @@ div p {
 }
 
 .bbox {
-    flex: 1 1 360px; /* flex-grow: 1, flex-shrink: 1, Basisbreite: 360px */
+    flex: 1 1 500px; /* flex-grow: 1, flex-shrink: 1, Basisbreite: 500px */
     padding: 10px;
 }
 
@@ -78,11 +71,7 @@ div p {
 }
 
 div:hover {
-    background-color: #ffcc00;
-}
-
-header:hover {
-    background-color: #ffcc00;
+    background-color: #4A90E2;
 }
 
 a {
@@ -103,4 +92,8 @@ a {
 
 .inhalt:hover {
     background-color: rgba(0, 0, 0, 0);
+}
+
+.s1, .s2, .s3, .s4, .s5 {
+    display: none;
 }
