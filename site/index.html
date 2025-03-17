@@ -15,18 +15,19 @@
     </div>
     <div class="inhalt">
         <div class="bbox">
-            <h1>Grundprinzip:</h1>
+            <h1>Grundprinzip</h1>
             <p>IMAP (Internet Message Access Protocol) ist eines der wichtigsten Protokolle für den Zugriff auf E-Mails, da es eine effiziente Verwaltung und Synchronisation von Nachrichten über mehrere Geräte hinweg ermöglicht.</p>
             <p class="s1">Im Gegensatz zu POP3, bei dem E-Mails heruntergeladen und danach oft vom Server gelöscht werden, verbleiben bei IMAP alle Nachrichten auf dem Mail-Server. Dies sorgt dafür, dass Nutzer jederzeit und von überall auf ihre gesamte E-Mail-Korrespondenz zugreifen können, unabhängig davon, ob sie ein Smartphone, Tablet, Laptop oder Desktop-Computer verwenden.</p>
-            <p><a class="s1" href="https://de.wikipedia.org/wiki/Internet_Message_Access_Protocol#Protokolleigenschaften" target="_blank"><i>Wikipedia Link</i></a></p>
+            <p><a class="s1" href="https://de.wikipedia.org/wiki/Internet_Message_Access_Protocol" target="_blank"><i>Wikipedia Link</i></a></p>
             <button id="gib1" onclick="gigainfo(1)">mehr anzeigen</button>
         </div>
         <div class="bbox">
-            <h1>Funktionsweise und technischer Aufbau:</h1>
+            <h1>Funktionsweise und technischer Aufbau</h1>
             <p>IMAP arbeitet nach dem Client-Server-Prinzip, wobei der E-Mail-Client (z. B. Outlook, Thunderbird, Apple Mail oder eine mobile App) mit dem Mail-Server kommuniziert, um eine synchronisierte Kopie der E-Mails bereitzustellen.</p>
             <p class="s2">Wenn eine neue Nachricht eingeht, bleibt sie auf dem Server gespeichert, während der Client eine Vorschau oder eine vollständige Kopie abruft. Dies hat den Vorteil, dass Speicherplatz auf dem Endgerät gespart wird, da E-Mails nicht lokal gespeichert werden müssen.</p>
             <p class="s2">Ein wesentlicher Aspekt von IMAP ist die bidirektionale Synchronisation. Änderungen, die ein Nutzer an einer E-Mail vornimmt, werden direkt auf dem Server gespeichert und sind dadurch auf allen verbundenen Geräten sichtbar. Wird eine E-Mail auf dem Smartphone als gelesen markiert, erscheint sie auch auf dem Laptop als gelesen. Ebenso werden gelöschte oder verschobene E-Mails auf allen Geräten entsprechend aktualisiert.</p>
-            <p><a class="s2" href="https://de.wikipedia.org/wiki/Internet_Message_Access_Protocol#Clients" target="_blank"><i>Wikipedia Link</i></a></p>
+            <a class="s2" id="img" href="https://www.techtarget.com/rms/onlineimages/email_delivery_process-f.png" target="_blank"><img src="https://www.techtarget.com/rms/onlineimages/email_delivery_process-f.png" alt="Verlauf der Email" width="100%"></a>
+            <p><a class="s2" href="https://www.techtarget.com/whatis/definition/IMAP-Internet-Message-Access-Protocol" target="_blank"><i>What is IMAP (Internet Message Access Protocol)? | Definition from TechTarget</i></a></p>
             <button id="gib2" onclick="gigainfo(2)">mehr anzeigen</button>
         </div>
         <div class="bbox">
@@ -46,20 +47,72 @@
                 <p>A004 LOGOUT</p>
             </div>
             <p class="s3">Diese einfache Kommunikation zeigt, wie ein Client eine Verbindung aufbaut, das Postfach auswählt, eine Nachricht abruft und sich wieder abmeldet.</p>
-            <p><a class="s3" href="https://de.wikipedia.org/wiki/Internet_Message_Access_Protocol#Clients" target="_blank"><i>Wikipedia Link</i></a></p>
             <button id="gib3" onclick="gigainfo(3)">mehr anzeigen</button>
         </div>
         <div class="bbox">
-            <h1>Technische Details:</h1>
-            <p>Das Protokoll arbeitet standardmäßig über den TCP-Port 143. Für gesicherte Verbindungen wird üblicherweise der Port 993 in Kombination mit SSL/TLS verwendet.</p>
-            <p><a class="s4" href="https://de.wikipedia.org/wiki/Internet_Message_Access_Protocol#Verschl%C3%BCsselung" target="_blank">Wikipedia Link</a></p>
+            <h1>Vergleich IMAP vs. POP3</h1>
+            <p>IMAP unterscheidet sich grundlegend vom älteren POP3-Protokoll (Post Office Protocol). Während POP3 alle E-Mails auf das Endgerät herunterlädt und sie anschließend oft vom Server löscht, verbleiben bei IMAP die E-Mails auf dem Server, sodass mehrere Geräte synchronisiert bleiben.</p>
+            <table class="s4">
+                    <tr>
+                        <th>Merkmal</th>
+                        <th>IMAP</th>
+                        <th>POP3</th>
+                    </tr>
+                    <tr>
+                        <td>Speicherung</td>
+                        <td>E-Mails bleiben auf dem Server</td>
+                        <td>E-Mails werden lokal gespeichert und oft gelöscht</td>
+                    </tr>
+                    <tr>
+                        <td>Synchronisation</td>
+                        <td>Änderungen werden auf allen Geräten übernommen</td>
+                        <td>Keine Synchronisation zwischen Geräten</td>
+                    </tr>
+                    <tr>
+                        <td>Zugriff</td>
+                        <td>Mehrere Geräte gleichzeitig</td>
+                        <td>Hauptsächlich ein einzelnes Gerät</td>
+                    </tr>
+                    <tr>
+                        <td>Offline-Nutzung</td>
+                        <td>Begrenzte Offline-Nutzung, wenn keine Kopien gespeichert sind</td>
+                        <td>E-Mails sind nach dem Download offline verfügbar</td>
+                    </tr>
+                    <tr>
+                        <td>Geeignet für</td>
+                        <td>Nutzer mit mehreren Geräten, Teams, Unternehmen</td>
+                        <td>Einzelpersonen mit nur einem Gerät</td>
+                    </tr>
+            </table>
+            <p><a class="s4" href="https://support.microsoft.com/en-us/office/what-are-imap-and-pop-ca2c5799-49f9-4079-aefe-ddca85d5b1c9" target="_blank"><i>What are IMAP and POP? - Microsoft Support</i></a></p>
             <button id="gib4" onclick="gigainfo(4)">mehr anzeigen</button>
         </div>
         <div class="bbox">
-            <h1>Vorteile gegenüber POP3:</h1>
-            <p>Anders als POP3, das meist die E-Mails vom Server herunterlädt und entfernt, lässt IMAP die Nachrichten auf dem Server liegen und ermöglicht so eine flexiblere und geräteübergreifende Verwaltung der E-Mails.</p>
-            <p><a class="s5" href="https://de.wikipedia.org/wiki/Internet_Message_Access_Protocol#Unterschiede_zum_Post_Office_Protocol" target="_blank">Wikipedia Link</a></p>
+            <h1>Mögliche Sicherheitsrisiken und Angriffe auf IMAP</h1>
+            <p>Da IMAP die gesamte E-Mail-Korrespondenz auf dem Server speichert, ist es anfällig für verschiedene Angriffe und Sicherheitsrisiken: Unverschlüsselte Verbindungen, Brute-Force-Angriffe, Phishing-Angriffe, DDoS-Angriffe auf E-Mail-Server.</p>
+            <ul class="s5">
+                <p><b>1. Unverschlüsselte Verbindungen</b><br>
+                    Standardmäßig läuft IMAP über Port 143 ohne Verschlüsselung, wodurch Angreifer in offenen Netzwerken (z. B. öffentlichen WLANs) Daten abfangen könnten. Deshalb sollte IMAP stets über eine SSL/TLS-verschlüsselte Verbindung (Port 993) genutzt werden.
+                </p>
+                <p><b>2. Brute-Force-Angriffe</b><br>
+                    Da IMAP mit Benutzername und Passwort arbeitet, kann es Ziel von Brute-Force-Angriffen werden, bei denen Hacker automatisiert Millionen von Passwörtern ausprobieren. Eine Absicherung durch Zwei-Faktor-Authentifizierung (2FA) und starke Passwörter ist essenziell.
+                </p>
+                <p><b>3. Phishing-Angriffe</b><br>
+                    E-Mail-Nutzer könnten auf gefälschte Login-Seiten oder manipulierte Links hereinfallen, die sie dazu verleiten, ihre Zugangsdaten preiszugeben. Hier hilft erhöhte Wachsamkeit sowie die Nutzung von Spam-Filtern und Anti-Phishing-Technologien.
+                </p>
+                <p><b>4. DDoS-Angriffe auf E-Mail-Server</b><br>
+                    Ein Server kann durch massenhafte Anfragen oder große Mengen an Spam-Nachrichten überlastet werden, was dazu führt, dass legitime Nutzer keinen Zugriff mehr auf ihre E-Mails haben.
+                </p>
+            </ul>
+            <p><a class="s5" href="https://www.techtarget.com/searchsecurity/tip/Where-does-IMAP-security-fall-short-and-how-can-it-be-fixed" target="_blank"><i>Where does IMAP security fall short, and how can it be fixed? | TechTarget</i></a></p>
             <button id="gib5" onclick="gigainfo(5)">mehr anzeigen</button>
+        </div>
+        <div class="bbox">
+            <h1>Zukunft und Alternativen zu IMAP</h1>
+            <p>Während IMAP ein etabliertes und weit verbreitetes Protokoll ist, gibt es zunehmend moderne Alternativen, die eine noch bessere Synchronisation und Verwaltung ermöglichen.</p>
+            <p>Protokolle wie Microsoft Exchange ActiveSync (EAS) oder cloudbasierte Lösungen wie Google Mail API bieten erweiterte Funktionen für Unternehmen und Privatnutzer. Dennoch bleibt IMAP eine zuverlässige und flexible Lösung für die meisten Nutzer, insbesondere in Kombination mit modernen E-Mail-Clients.<p>
+            <p><a class="s6" href="https://de.wikipedia.org/wiki/Internet_Message_Access_Protocol" target="_blank"><i>Wikipedia Link</i></a></p>
+            <button id="gib6" onclick="gigainfo(6)">mehr anzeigen</button>
         </div>
     </div>
 </body>

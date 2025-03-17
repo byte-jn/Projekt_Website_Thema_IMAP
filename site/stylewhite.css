@@ -2,9 +2,9 @@ body {
     background-color: #f0f0f0;
     color: #0f0f0f;
     font-family: monospace;
-    padding: 1%;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    margin: 1%;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 button {
@@ -26,8 +26,53 @@ div {
     border-radius: 10px;
 }
 
-div p {
+p {
     font-size: larger;
+}
+
+a {
+    color: #0f0f0f;
+}
+
+li {
+    font-size: larger;
+}
+
+b {
+    margin: -26px;
+}
+
+ul {
+    padding-left: 26px;
+}
+
+img {
+    border-radius: 10px;
+}
+
+table {
+    font-size: larger;
+    color: #0f0f0f;
+    border-collapse: collapse;
+    overflow: hidden;
+    background-color: #f0f0f0;
+    height: auto;
+    width: auto;
+    max-width: fit-content;
+}
+
+th, td {
+    height: auto;
+    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid #0f0f0f;
+    text-align: left;
+}
+th {
+    background-color: #cacaca;
+    color: #0f0f0f;
+    text-transform: uppercase;
 }
 
 .bbox {
@@ -74,10 +119,6 @@ div:hover {
     background-color: #4A90E2;
 }
 
-a {
-    color: #0f0f0f;
-}
-
 .inhalt {
     margin: 0px;
     padding: 0px;
@@ -92,15 +133,11 @@ a {
     min-width: 0px;
 }
 
-li {
-    font-size: larger;
-}
-
 .inhalt:hover {
     background-color: rgba(0, 0, 0, 0);
 }
 
-.s1, .s2, .s3, .s4, .s5 {
+.s1, .s2, .s3, .s4, .s5, .s6 {
     display: none;
 }
 
@@ -160,4 +197,13 @@ li {
 
 #code #red {
     color: #df3079;
+}
+
+#img {
+    margin: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0px;
+    background-color: #ffffff00;
+    flex: none; 
 }
