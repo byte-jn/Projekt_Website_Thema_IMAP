@@ -16,20 +16,35 @@
     <div class="inhalt">
         <div class="bbox">
             <h1>Grundprinzip:</h1>
-            <p>IMAP ist ein Protokoll zum Abrufen und Verwalten von E-Mails direkt auf dem Server. Es ermöglicht Clients den gleichzeitigen Zugriff auf dieselbe Mailbox, ohne dass die Nachrichten lokal dauerhaft gespeichert werden müssen.</p>
-            <p class="s1">Hier was rein</p>
+            <p>IMAP (Internet Message Access Protocol) ist eines der wichtigsten Protokolle für den Zugriff auf E-Mails, da es eine effiziente Verwaltung und Synchronisation von Nachrichten über mehrere Geräte hinweg ermöglicht.</p>
+            <p class="s1">Im Gegensatz zu POP3, bei dem E-Mails heruntergeladen und danach oft vom Server gelöscht werden, verbleiben bei IMAP alle Nachrichten auf dem Mail-Server. Dies sorgt dafür, dass Nutzer jederzeit und von überall auf ihre gesamte E-Mail-Korrespondenz zugreifen können, unabhängig davon, ob sie ein Smartphone, Tablet, Laptop oder Desktop-Computer verwenden.</p>
             <p><a class="s1" href="https://de.wikipedia.org/wiki/Internet_Message_Access_Protocol#Protokolleigenschaften" target="_blank"><i>Wikipedia Link</i></a></p>
             <button id="gib1" onclick="gigainfo(1)">mehr anzeigen</button>
         </div>
         <div class="bbox">
-            <h1>Synchronisation und Statusverwaltung:</h1>
-            <p>Da E-Mails auf dem Server verbleiben, bleiben Statusinformationen wie "gelesen", "ungelesen" oder "markiert" stets synchron – unabhängig davon, von welchem Gerät aus auf das Postfach zugegriffen wird.</p>
+            <h1>Funktionsweise und technischer Aufbau:</h1>
+            <p>IMAP arbeitet nach dem Client-Server-Prinzip, wobei der E-Mail-Client (z. B. Outlook, Thunderbird, Apple Mail oder eine mobile App) mit dem Mail-Server kommuniziert, um eine synchronisierte Kopie der E-Mails bereitzustellen.</p>
+            <p class="s2">Wenn eine neue Nachricht eingeht, bleibt sie auf dem Server gespeichert, während der Client eine Vorschau oder eine vollständige Kopie abruft. Dies hat den Vorteil, dass Speicherplatz auf dem Endgerät gespart wird, da E-Mails nicht lokal gespeichert werden müssen.</p>
+            <p class="s2">Ein wesentlicher Aspekt von IMAP ist die bidirektionale Synchronisation. Änderungen, die ein Nutzer an einer E-Mail vornimmt, werden direkt auf dem Server gespeichert und sind dadurch auf allen verbundenen Geräten sichtbar. Wird eine E-Mail auf dem Smartphone als gelesen markiert, erscheint sie auch auf dem Laptop als gelesen. Ebenso werden gelöschte oder verschobene E-Mails auf allen Geräten entsprechend aktualisiert.</p>
             <p><a class="s2" href="https://de.wikipedia.org/wiki/Internet_Message_Access_Protocol#Clients" target="_blank"><i>Wikipedia Link</i></a></p>
             <button id="gib2" onclick="gigainfo(2)">mehr anzeigen</button>
         </div>
         <div class="bbox">
-            <h1>Erweiterte Funktionen:</h1>
-            <p>IMAP unterstützt nicht nur den simplen Abruf von Nachrichten, sondern auch das Verwalten von Ordnerstrukturen, das Durchführen von Suchvorgängen und das selektive Herunterladen von Inhalten (z. B. nur Kopfzeilen).</p>
+            <h1>IMAP-Befehle und Kommunikation mit dem Server</h1>
+            <p>IMAP nutzt standardisierte Befehle, um die Kommunikation zwischen Client und Server zu ermöglichen. Einige der wichtigsten Befehle sind: Login, Select Inbox, Fetch, Store, Expunge</p>
+            <ul class="s3">
+                <li>Login: Authentifiziert den Nutzer mit Benutzername und Passwort</li>
+                <li>Select Inbox: Wählt das Postfach aus, in dem Nachrichten verwaltet werden</li>
+                <li>Fetch: Ruft eine bestimmte E-Mail oder Kopfzeileninformationen ab</li>
+                <li>Store: Speichert Statusänderungen wie "gelesen" oder "markiert"</li>
+                <li>Expunge: Löscht dauerhaft als gelöscht markierte E-Mails</li>
+            </ul>
+            <div class="s3" id="code"><div><h1>Beispiel für eine typische IMAP-Session:</h1></div>
+                <p>A001 <span>LOGIN</span> benutzername passwort</p>
+                <p>A002 <span>SELECT</span> INBOX</p>
+                <p>A003 <span>FETCH</span> <span id="red">1</span> BODY[]</p>
+                <p>A004 LOGOUT</p>
+            </div>
             <p><a class="s3" href="https://de.wikipedia.org/wiki/Internet_Message_Access_Protocol#Clients" target="_blank"><i>Wikipedia Link</i></a></p>
             <button id="gib3" onclick="gigainfo(3)">mehr anzeigen</button>
         </div>
