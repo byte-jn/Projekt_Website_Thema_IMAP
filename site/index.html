@@ -32,19 +32,21 @@
         </div>
         <div class="bbox">
             <h1>IMAP-Befehle und Kommunikation mit dem Server</h1>
-            <p>IMAP nutzt standardisierte Befehle, um die Kommunikation zwischen Client und Server zu ermöglichen. Einige der wichtigsten Befehle sind: Login, Select Inbox, Fetch, Store, Expunge</p>
+            <p>IMAP nutzt standardisierte Befehle, um die Kommunikation zwischen Client und Server zu ermöglichen. Einige der wichtigsten Befehle sind: Login, Select Inbox, Fetch, Store, Search, Expunge, Logout</p>
             <ul class="s3">
                 <li>Login: Authentifiziert den Nutzer mit Benutzername und Passwort</li>
                 <li>Select Inbox: Wählt das Postfach aus, in dem Nachrichten verwaltet werden</li>
                 <li>Fetch: Ruft eine bestimmte E-Mail oder Kopfzeileninformationen ab</li>
                 <li>Store: Speichert Statusänderungen wie "gelesen" oder "markiert"</li>
+                <li>Search: Ermöglicht die Suche nach Nachrichten, die bestimmten Kriterien entsprechen.</li>
                 <li>Expunge: Löscht dauerhaft als gelöscht markierte E-Mails</li>
+                <li>Logout: Trennt die Verbindung zum Server.</li>
             </ul>
             <div class="s3" id="code"><div><h1>Beispiel für eine typische IMAP-Session:</h1></div>
                 <p>A001 <span>LOGIN</span> benutzername passwort</p>
                 <p>A002 <span>SELECT</span> INBOX</p>
                 <p>A003 <span>FETCH</span> <span id="red">1</span> BODY[]</p>
-                <p>A004 LOGOUT</p>
+                <p>A004 <span>LOGOUT</span></p>
             </div>
             <p class="s3">Diese einfache Kommunikation zeigt, wie ein Client eine Verbindung aufbaut, das Postfach auswählt, eine Nachricht abruft und sich wieder abmeldet.</p>
             <button id="gib3" onclick="gigainfo(3)">mehr anzeigen</button>
@@ -110,7 +112,7 @@
         <div class="bbox">
             <h1>Zukunft und Alternativen zu IMAP</h1>
             <p>Während IMAP ein etabliertes und weit verbreitetes Protokoll ist, gibt es zunehmend moderne Alternativen, die eine noch bessere Synchronisation und Verwaltung ermöglichen.</p>
-            <p>Protokolle wie Microsoft Exchange ActiveSync (EAS) oder cloudbasierte Lösungen wie Google Mail API bieten erweiterte Funktionen für Unternehmen und Privatnutzer. Dennoch bleibt IMAP eine zuverlässige und flexible Lösung für die meisten Nutzer, insbesondere in Kombination mit modernen E-Mail-Clients.<p>
+            <p class="s6">Protokolle wie Microsoft Exchange ActiveSync (EAS) oder cloudbasierte Lösungen wie Google Mail API bieten erweiterte Funktionen für Unternehmen und Privatnutzer. Dennoch bleibt IMAP eine zuverlässige und flexible Lösung für die meisten Nutzer, insbesondere in Kombination mit modernen E-Mail-Clients.<p>
             <p><a class="s6" href="https://de.wikipedia.org/wiki/Internet_Message_Access_Protocol" target="_blank"><i>Wikipedia Link</i></a></p>
             <button id="gib6" onclick="gigainfo(6)">mehr anzeigen</button>
         </div>
