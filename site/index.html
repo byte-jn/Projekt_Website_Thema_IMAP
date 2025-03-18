@@ -32,15 +32,12 @@
         </div>
         <div class="bbox">
             <h1>IMAP-Befehle und Kommunikation mit dem Server</h1>
-            <p>IMAP nutzt standardisierte Befehle, um die Kommunikation zwischen Client und Server zu ermöglichen. Einige der wichtigsten Befehle sind: Login, Select Inbox, Fetch, Store, Search, Expunge, Logout</p>
+            <p>IMAP nutzt standardisierte Befehle, um die Kommunikation zwischen Client und Server zu ermöglichen. Einige der wichtigsten Befehle sind: Login, Select, Fetch, Logout,...</p>
             <ul class="s3">
-                <li>Login: Authentifiziert den Nutzer mit Benutzername und Passwort</li>
-                <li>Select Inbox: Wählt das Postfach aus, in dem Nachrichten verwaltet werden</li>
-                <li>Fetch: Ruft eine bestimmte E-Mail oder Kopfzeileninformationen ab</li>
-                <li>Store: Speichert Statusänderungen wie "gelesen" oder "markiert"</li>
-                <li>Search: Ermöglicht die Suche nach Nachrichten, die bestimmten Kriterien entsprechen.</li>
-                <li>Expunge: Löscht dauerhaft als gelöscht markierte E-Mails</li>
-                <li>Logout: Trennt die Verbindung zum Server.</li>
+                <li>LOGIN: Ermöglicht dem Client die Authentifizierung mit Benutzername und Passwort.</li>
+                <li>SELECT: Wählt einen bestimmten Ordner (Mailbox) zur weiteren Bearbeitung aus.</li>
+                <li>FETCH: Ruft bestimmte Attribute oder Inhalte von Nachrichten ab.</li>
+                <li>LOGOUT: Beendet die aktuelle Sitzung und meldet den Client vom Server ab.</li>
             </ul>
             <div class="s3" id="code"><div><h1>Beispiel für eine typische IMAP-Session:</h1></div>
                 <p>A001 <span>LOGIN</span> benutzername passwort</p>
@@ -49,6 +46,30 @@
                 <p>A004 <span>LOGOUT</span></p>
             </div>
             <p class="s3">Diese einfache Kommunikation zeigt, wie ein Client eine Verbindung aufbaut, das Postfach auswählt, eine Nachricht abruft und sich wieder abmeldet.</p>
+            <p>Andere Befehle:</p>
+            <ul class="s3">
+                <li>STORE: Ändert Attribute von Nachrichten, z.B. Markierungen.</li>
+                <li>SEARCH: Durchsucht den aktuellen Ordner nach Nachrichten, die bestimmten Kriterien entsprechen.</li>
+                <li>EXPUNGE: Entfernt dauerhaft alle zum Löschen markierten Nachrichten aus dem aktuellen Ordner.</li>
+                <li>STARTTLS: Initiiert die Verschlüsselung der Sitzung mittels TLS, sofern vom Server unterstützt.</li>
+                <li>AUTHENTICATE: Startet einen SASL-Authentifizierungsmechanismus zur Identitätsprüfung des Clients.</li>
+                <li>EXAMINE: Öffnet einen Ordner im Nur-Lese-Modus.</li>
+                <li>CREATE: Erstellt einen neuen Ordner.</li>
+                <li>DELETE: Löscht einen vorhandenen Ordner.</li>
+                <li>RENAME: Benennt einen Ordner um.</li>
+                <li>SUBSCRIBE: Abonniert einen Ordner, um Benachrichtigungen über neue Nachrichten zu erhalten.</li>
+                <li>UNSUBSCRIBE: Beendet das Abonnement eines Ordners.</li>
+                <li>LIST: Listet alle verfügbaren Ordner auf.</li>
+                <li>LSUB: Listet alle abonnierten Ordner auf.</li>
+                <li>STATUS: Gibt den Status eines bestimmten Ordners zurück, z.B. Anzahl ungelesener Nachrichten.</li>
+                <li>APPEND: Fügt eine Nachricht zu einem bestimmten Ordner hinzu.</li>
+                <li>CHECK: Führt eine Integritätsprüfung des aktuellen Ordners durch.</li>
+                <li>CLOSE: Schließt den aktuellen Ordner und löscht dabei Nachrichten, die zum Löschen markiert wurden.</li>
+                <li>COPY: Kopiert Nachrichten in einen anderen Ordner.</li>
+                <li>UID: Verwendet eindeutige Kennungen (UIDs) für Nachrichtenoperationen.</li>
+                <li>CAPABILITY: Fragt die Fähigkeiten und unterstützten Erweiterungen des Servers ab.</li>
+                <li>NOOP: Dient dazu, die Verbindung zum Server aufrechtzuerhalten, ohne weitere Aktionen durchzuführen.</li>
+            </ul>
             <button id="gib3" onclick="gigainfo(3)">mehr anzeigen</button>
         </div>
         <div class="bbox">
